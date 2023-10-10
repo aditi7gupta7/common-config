@@ -1,0 +1,15 @@
+version: 2.1
+
+orbs:
+  common-config:
+    description: "neww"
+    namespace: aditi7gupta7
+    commands:
+      - common_build
+    executors:
+      default:
+        docker:
+          - image: circleci/openjdk:11-jdk
+    jobs:
+      common_build:
+        executor: default
